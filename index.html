@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lincoln da Rede - Rádio Rede Alternativa</title>
+  <meta name="theme-color" content="#0056A6">
+
+  <!-- Manifesto do PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Ícones para Android -->
+  <link rel="icon" sizes="192x192" href="logo192.png">
+  <link rel="apple-touch-icon" href="logo512.png">
+
+  <!-- Registro do Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(function(registration) {
+          console.log('Service Worker registrado com sucesso:', registration.scope);
+        }).catch(function(error) {
+          console.log('Falha ao registrar o Service Worker:', error);
+        });
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #FFFFFF;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #0056A6;
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .button {
+      background-color: #FFA500;
+      color: white;
+      padding: 15px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>🎙️ Rádio Rede Alternativa</h1>
+    <p>Aqui você escuta o que seu coração pedir.</p>
+    <p><strong>Direção Geral: Seu amigo Lincoln da Rede</strong></p>
+
+    <a href="https://sites.google.com/view/lincolndarede/início" class="button">🔗 Acessar o Site Oficial</a>
+
+    <footer>
+      <p>&copy; 2025 Lincoln da Rede – Ribeirão das Neves</p>
+    </footer>
+  </div>
+</body>
+</html>
